@@ -25,13 +25,24 @@ Setps to Install Tailwind Vite using PostCSS method
 5. Install tailwind css intellisense extension. [IGNORE IF ALREADY INSTALLED]
 
 6. Add "./index.html', './src/**/*.{js,ts,jsx,tsx}" in content in [ tailwind.config.js ] file.
+7. And also extend theme
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      },
+      gridTemplateColumns: {
+        '70/30': '70% 28%',
+      },
+    },
+  },
 
-7. Open src/index.css or src/App.css and insert: 
+8. Open src/index.css or src/App.css and insert: 
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
 
-8. Run command to go live:
+9. Run command to go live:
 	npm run dev
 	
 (Close and again open VS Code for className suggestions)
