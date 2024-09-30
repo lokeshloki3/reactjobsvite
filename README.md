@@ -73,3 +73,4 @@ Just install these if copying my project -
 
 npm i react-icons
 npm i react-toastify
+npm run dev
